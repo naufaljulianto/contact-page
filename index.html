@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar/Logo -->
+    <nav>
+      <img src="img/business-coaching-idea-jigsaw.svg" alt="Business Graph" />
+      <p class="brand">Graphiness</p>
+    </nav>
+
+    <!-- Header -->
+    <header>
+      <h1>Interested in our business pricing?</h1>
+      <p class="description">
+        fill out design the form to fiew details and we'll contact you as soon
+        as possible
+      </p>
+    </header>
+
+    <!-- Form -->
+    <div class="container">
+      <form>
+        <div class="form-row">
+          <div>
+            <label> Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name..."
+            />
+          </div>
+          <div>
+            <label> Company Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your company email..."
+            />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div>
+            <label>Company Size</label>
+            <select id="company-size" name="company-size">
+              <option>50-100 employees</option>
+              <option>100-500 employees</option>
+              <option>500-1000 employees</option>
+              <option>>1000 employees</option>
+            </select>
+          </div>
+          <div>
+            <label>Subject</label>
+            <select id="subject" name="subject">
+              <option>Building Landing Pages</option>
+              <option>Building Web App</option>
+              <option>Building E-Commerce</option>
+            </select>
+          </div>
+        </div>
+
+        <label>Message</label>
+        <textarea name="message"></textarea>
+
+        <button type="submit">Contact Sales</button>
+      </form>
+    </div>
+  </body>
+</html>

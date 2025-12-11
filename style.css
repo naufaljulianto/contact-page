@@ -1,0 +1,185 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background: linear-gradient(to top left, rgb(29, 12, 177), rgb(199, 20, 20));
+  background-repeat: no-repeat;
+}
+
+img {
+  width: 32px;
+  height: 32px;
+}
+
+nav {
+  padding: 20px 15px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.brand {
+  margin: 5px;
+  color: rgb(20, 114, 255);
+}
+
+header {
+  color: #eee;
+  margin-bottom: 50px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+.description {
+  font-size: 0.8rem;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  margin: 10px 10px 50px 10px;
+  padding: 20px 10px;
+  border-radius: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row div {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: #eee;
+  font-size: 0.8rem;
+  margin-bottom: 3px;
+}
+
+input {
+  height: 50px;
+  border-radius: 15px;
+  padding: 0 20px;
+}
+
+#name,
+#email {
+  margin-bottom: 20px;
+}
+
+select {
+  height: 50px;
+  border-radius: 15px;
+  padding: 0 20px;
+}
+
+#company-size,
+#subject {
+  margin-bottom: 20px;
+}
+
+textarea {
+  padding: 25px 20px;
+  height: 150px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+button {
+  color: rgb(153, 0, 255);
+  font-size: 0.9rem;
+  font-weight: bold;
+  height: 55px;
+  border-radius: 15px;
+}
+
+button:hover {
+  color: rgb(112, 0, 187);
+}
+
+input,
+select,
+textarea,
+button {
+  border: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: 2px solid rgb(112, 0, 187);
+}
+
+/* Media Queries */
+
+/* Tablet */
+@media (min-width: 768px) {
+  nav {
+    padding: 20px 60px;
+  }
+
+  header {
+    padding: 0 150px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .description {
+    font-size: 1.5rem;
+  }
+
+  .container {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    margin: 10px 80px 40px 80px;
+    padding: 30px 30px;
+    border-radius: 15px;
+  }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  textarea,
+  button {
+    grid-column: span 2;
+  }
+
+  label {
+    font-size: 0.9rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+}
+
+/* Laptop */
+@media (min-width: 1024px) {
+  .container {
+    margin: 50px 350px 50px 350px;
+  }
+
+  header {
+    padding: 0 400px;
+  }
+}
