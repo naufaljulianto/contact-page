@@ -7,16 +7,16 @@ body {
   background-repeat: no-repeat;
 }
 
-img {
-  width: 32px;
-  height: 32px;
-}
-
 nav {
   padding: 20px 15px;
   display: flex;
   align-items: center;
   margin-bottom: 30px;
+}
+
+img {
+  width: 32px;
+  height: 32px;
 }
 
 .brand {
@@ -70,23 +70,15 @@ label {
   margin-bottom: 3px;
 }
 
-input {
-  height: 50px;
-  border-radius: 15px;
-  padding: 0 20px;
-}
-
-#name,
-#email {
-  margin-bottom: 20px;
-}
-
+input,
 select {
   height: 50px;
   border-radius: 15px;
   padding: 0 20px;
 }
 
+#name,
+#email,
 #company-size,
 #subject {
   margin-bottom: 20px;
@@ -181,5 +173,74 @@ button:focus {
 
   header {
     padding: 0 400px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1280px) {
+  .container {
+    margin: 50px 150px 50px 150px;
+    padding: 40px 35px;
+  }
+
+  header {
+    padding: 0 200px;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  .description {
+    font-size: 2.5rem;
+  }
+
+  .form-row {
+    gap: 25px;
+    margin-bottom: 10px;
+  }
+
+  label {
+    color: #eee;
+    font-size: 1rem;
+    margin-bottom: 6px;
+  }
+
+  input,
+  select {
+    height: 75px;
+    border-radius: 20px;
+    padding: 0 25px;
+  }
+
+  textarea {
+    padding: 30px 25px;
+    height: 200px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+  }
+
+  button {
+    color: rgb(153, 0, 255);
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: 75px;
+    border-radius: 20px;
+  }
+
+  nav {
+    padding: 25px 80px;
+  }
+
+  img {
+    width: 55px;
+    height: 55px;
+  }
+
+  .brand {
+    font-weight: bold;
+    font-size: 1.7rem;
+    margin: 10px;
+    color: rgb(20, 114, 255);
   }
 }
